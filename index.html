@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>York Zhang's Resume Bot</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="text-center my-5">Welcome to York Zhang's Resume Bot</h1>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div id="chatbot"></div>
+            </div>
+        </div>
+    </div>
+    <script type="module">
+        import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
+        Chatbot.init({
+            chatflowid: "aa6e704c-5cf1-4c45-a259-8c206ccb6a00",
+            apiHost: "https://myflowise.azurewebsites.net",
+        })
+    </script>
+</body>
+
+</html>
